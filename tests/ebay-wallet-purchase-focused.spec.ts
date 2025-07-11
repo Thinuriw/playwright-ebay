@@ -123,3 +123,4 @@ test.describe('Wallet Purchase Scenarios', () => {
     expect(productPageHandle.url()).toBeTruthy(); // Basic assertion that we're still navigating
   });
 });
+

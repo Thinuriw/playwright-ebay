@@ -34,4 +34,5 @@
         await this.page.click(selector);
       }
     }
-} 
+}
+ 

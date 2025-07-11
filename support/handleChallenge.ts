@@ -80,4 +80,5 @@ export async function handleChallengeIfPresent(page: Page) {
       }
     }
   }
-} 
+}
+ 

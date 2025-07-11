@@ -179,6 +179,4 @@ test.describe('Related Products Section', () => {
     expect(true).toBeTruthy(); // Optionally, assert icon state change
   });
 
-  // TC-008, TC-009, TC-010, TC-011, TC-012, TC-013 would require special search terms or product selection logic
-  // For brevity, only the main flow is shown here. You can add logic to search for niche/limited products as needed.
-}); 
+  });

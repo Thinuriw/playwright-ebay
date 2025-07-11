@@ -7,7 +7,7 @@ This project uses Playwright with the Page Object Model (POM) to automate UI tes
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Thinuriw/playwright-ebay.git
 cd playwright-ebay
 ```
 
@@ -38,26 +38,14 @@ cd playwright-ebay
 
 ```
 playwright-ebay/
-├── pages/                                   # Page Object Model classes
-│   ├── BasePage.ts                         # Base page object class
-│   ├── HomePage.ts                         # eBay homepage with search functionality
-│   ├── SearchResultsPage.ts               # Search results page navigation
-│   └── ProductPage.ts                     # Product details page with related products
-├── tests/                                  # Test specifications
-│   ├── ebay-search.spec.ts               # Basic search functionality tests
-│   ├── ebay-wallet-related-products.spec.ts # Related products validation tests
-│   ├── ebay-wallet-purchase.spec.ts       # Purchase flow automation tests
-│   └── ebay-wallet-purchase-focused.spec.ts # Focused purchase scenarios
-├── fixtures/                              # Test fixtures and data
-│   └── test-fixtures.ts                  # Shared test data and setup
-├── support/                               # Utility functions and helpers
-│   ├── handleChallenge.ts               # eBay anti-bot challenge handler
-│   ├── test-helpers.ts                  # Test-specific helper functions
-│   └── utils.ts                         # General utilities
-├── screenshots/                          # Test screenshots for debugging
-├── playwright-report/                    # HTML test reports
-├── test-results/                        # Test execution results
-└── playwright.config.ts                 # Playwright configuration
+├── pages/                    # Page Object Model classes
+├── tests/                    # Test specifications  
+├── fixtures/                 # Test fixtures and data
+├── support/                  # Utility functions and helpers
+├── screenshots/              # Test screenshots for debugging
+├── playwright-report/        # HTML test reports
+├── test-results/            # Test execution results
+└── package.json             # Project dependencies and scripts
 ```
 
 ## 🧪 Test Scenarios
@@ -98,9 +86,6 @@ npx playwright test ebay-wallet-related-products.spec.ts
 
 # Purchase flow tests  
 npx playwright test ebay-wallet-purchase-focused.spec.ts
-
-# Basic search tests
-npx playwright test ebay-search.spec.ts
 ```
 
 ### Run Tests in Different Modes

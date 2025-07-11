@@ -43,4 +43,5 @@ export class TestHelpers {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     await page.screenshot({ path: `screenshots/${name}-${timestamp}.png` });
   }
-} 
+}
+ 
